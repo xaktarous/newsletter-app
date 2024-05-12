@@ -1,0 +1,269 @@
+:root{
+    --tomato:hsl(4, 100%, 67%);
+    --Dark-Slate-Grey:hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+  }
+  *,::before,::after{
+    box-sizing: border-box;
+    
+  }
+  body{
+    font-family: "Roboto",sans-serif;
+    background-color: var(--Charcoal-Grey);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(400px,100%,1440px);
+    margin: 0;
+    font-size: 16px;
+    height: 100vh;
+  }
+  main{
+    width:max(60%,850px);
+  
+    background-color: var(--White);
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  h1{
+    color: var(--Dark-Slate-Grey);
+    font-size: 40px;
+  }
+  
+  .left{
+    width:50%;
+    
+  }
+  li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  li svg{
+    width: 20px;
+    height: 20px;
+  }
+  li p{
+    width: 70%;
+  }
+  .right{
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  
+  
+  label{
+    font-weight: 600;
+    margin-top: 30px;
+    display: flex;
+    font-size: 12px;
+   
+  }
+  
+  input{
+    display: flex;
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--Grey);
+    height: 40px; 
+  }
+  .fel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  button{
+    width: 80%;
+    height: 40px; 
+    border-radius: 5px;
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+  }
+  button:hover{
+    background-color: var(--tomato);
+    cursor: pointer;
+    color: var(--White);
+  }
+  .span{
+    position: relative;
+    left:max(9.3vw,80px);
+    color: var(--tomato);
+    font-weight: 400;
+  
+  }
+  .invalid{
+    border:1px solid var(--tomato);
+    background-color: #FFEEEE;
+    color: var(--tomato);
+    font-weight: 400;
+    
+  }
+  
+  .svg{
+    display: none;
+  }
+  
+  
+  
+  @media screen and (max-width:450px) {
+    body{
+        background-color: var(--White);
+       margin: 0;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    h1{
+        color: var(--Dark-Slate-Grey);
+        font-size: 30px;
+        margin: 0;
+    }
+   main{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--White);
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+    margin: 0;
+    padding-bottom: 100px;
+   }
+   .desk{
+    display: none;
+   }
+   .svg{
+    display: block  !important;
+    margin: 0;
+   
+   }
+   
+   img{
+    width: 100%;
+    margin: 0;
+    border:0;
+    padding: 0;
+   }
+   .right{
+    width:100%;
+    
+   }
+   .left{
+    width: 100%;
+    margin-left: 30px;
+    
+   }
+  
+   .span{
+    position: relative;
+    left:130px;
+    color: var(--tomato);
+    font-weight: 400;
+    
+   }
+   button{
+    margin-bottom: 30px;
+   }
+   button{
+    width: 90%;
+   }
+   input{
+    width:90%;
+   }
+   label{
+    margin-top: 10px;
+   }
+  }
+  
+  
+  
+  @media screen and (max-width:390px) {
+    body{
+        background-color: var(--Charcoal-Grey);
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--White);
+    }
+    
+    h1{
+        color: var(--Dark-Slate-Grey);
+        font-size: 30px;
+        margin: 0;
+    }
+   main{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+    margin:0;
+    padding-bottom: 50px;
+   }
+   .desk{
+    display: none;
+   }
+   .svg{
+    display: block  !important ;
+    margin: 0;
+   
+    
+   }
+  
+   img{
+    width: 100%;
+    margin: 0;
+    border:0;
+    padding: 0;
+   }
+   .right{
+    width:100%;
+    margin: 0;
+   
+   }
+   .left{
+    width: 100%;
+    margin-left: 30px;
+   }
+  
+   .span{
+    position: relative;
+    left: 130px;
+    color: var(--tomato);
+    font-weight: 400;
+    display: none;
+   }
+   button{
+    width: 90%;
+   }
+   input{
+    width:90%;
+   }
+  }
+  
+  
