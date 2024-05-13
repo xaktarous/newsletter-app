@@ -1,5 +1,5 @@
 import {All} from "../component"
-import images from "../assets/icon-success.svg"
+import images from "../assets/illustration-sign-up-mobile.svg"
 import "./home.css"
 const Home = () => {
   return (
