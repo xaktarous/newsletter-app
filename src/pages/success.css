@@ -105,6 +105,7 @@
    .H1{
     margin-left: 20px;
     margin-bottom: 50px;
+    width: 270px !important;
    }
    .P{
     font-size: 16px;
